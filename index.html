@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* background-color: mediumaquamarine; */
+        background: url("green-snake.jpg");
+        background-position: top;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      button:focus {
+        background-color: white;
+        transform: scale(1.05);
+      }
+
+      .btn {
+        padding: 0.5rem 0;
+        margin-bottom: 5px;
+        width: 70px;
+      }
+
+      .btn.restart {
+        margin-left: 4rem;
+      }
+
+      #game-board {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px dashed crimson;
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+        width: 90vmin;
+        height: 90vmin;
+      }
+
+      .lost {
+        background-color: crimson;
+      }
+
+      .snake {
+        background-color: white;
+        border: 0.5px solid mediumaquamarine;
+        border-radius: 10%;
+        z-index: 2;
+      }
+      .food {
+        background-color: mediumaquamarine;
+        border-radius: 25%;
+        z-index: 1;
+      }
+    </style>
+    <script src="app.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="buttons">
+      <button class="btn easy" autofocus>Easy</button>
+      <button class="btn medium">Medium</button>
+      <button class="btn hard">Hard</button>
+      <button class="btn restart">restart</button>
+    </div>
+    <div id="game-board"></div>
+  </body>
+</html>
