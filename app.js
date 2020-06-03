@@ -14,12 +14,12 @@ const gameBoard = document.getElementById("game-board");
 
 document
   .querySelector(".restart")
-  .addEventListener("click", () => (window.location = "/"));
+  .addEventListener("click", () => (window.location = "/snake"));
 
 function main(currentTime) {
   if (gameOver) {
     if (confirm("Klęska Węża! Naciśnij OK jeśli chcesz zagrać ponownie")) {
-      window.location = "/";
+      window.location = "/snake";
     }
     return;
   }
