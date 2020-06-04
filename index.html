@@ -47,19 +47,16 @@
         height: 90vmin;
       }
 
-      .lost {
-        background-color: crimson;
+      .snake {
+        background-color: #34a71a;
+        z-index: 2;
+        border: 0.1px solid yellowgreen;
+        border-radius: 10%;
       }
 
-      .snake {
-        background-color: white;
-        border: 0.5px solid mediumaquamarine;
-        border-radius: 10%;
-        z-index: 2;
-      }
       .food {
-        background-color: mediumaquamarine;
-        border-radius: 25%;
+        background-color: #ddd;
+        border-radius: 45%;
         z-index: 1;
       }
     </style>
@@ -67,8 +64,8 @@
   </head>
   <body>
     <div class="buttons">
-      <button class="btn easy" autofocus>Easy</button>
-      <button class="btn medium">Medium</button>
+      <button class="btn easy">Easy</button>
+      <button class="btn medium" autofocus>Medium</button>
       <button class="btn hard">Hard</button>
       <button class="btn restart">restart</button>
     </div>
